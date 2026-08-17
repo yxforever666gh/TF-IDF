@@ -15,6 +15,7 @@ data/output/**/*.md
 dist/
 build/
 *.egg-info/
+/release-assets/
 !data/processed/.gitkeep
 !data/output/.gitkeep
 !artifacts/.gitkeep
