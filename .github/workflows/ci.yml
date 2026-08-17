@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m ruff check src tests
+      - run: python -m pytest
+      - name: Privacy scan synthetic samples
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from unified_tfidf.privacy import contains_pii
+          files = sorted(Path("data/samples").glob("*.csv"))
+          assert files
+          leaking = [str(path) for path in files if contains_pii(path.read_text(encoding="utf-8"))]
+          assert not leaking, leaking
+          PY

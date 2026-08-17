@@ -1,0 +1,38 @@
+{
+  "content_validity": {
+    "kind": "single",
+    "labels": ["有效", "低信息或模板"]
+  },
+  "product_scope": {
+    "kind": "single",
+    "labels": ["iPhone16", "其他3C", "无法确认", "无关"]
+  },
+  "sentiment": {
+    "kind": "single",
+    "labels": ["正向", "中性或无法判断", "混合", "负向"]
+  },
+  "product_topics": {
+    "kind": "multi",
+    "labels": ["电池与充电", "屏幕与触控", "发热与性能", "信号与通信", "影像与音频", "外观与结构", "系统与软件", "正品与激活", "配件与兼容", "无产品问题", "其他产品问题"]
+  },
+  "service_topics": {
+    "kind": "multi",
+    "labels": ["物流与包装", "价格与营销", "客服与推诿", "检测争议", "维修问题", "保修争议", "退换货退款", "账号与数据", "以旧换新与回收", "无服务问题"]
+  },
+  "severity": {
+    "kind": "single",
+    "labels": ["0", "1", "2", "3"]
+  },
+  "resolution": {
+    "kind": "single",
+    "labels": ["不适用", "无法判断", "处理中", "未解决", "部分解决", "已解决"]
+  },
+  "user_request": {
+    "kind": "single",
+    "labels": ["无明确诉求", "解释与检测", "维修相关诉求", "更换设备", "退款退货", "赔偿补偿", "道歉整改", "加快处理", "其他诉求"]
+  },
+  "purchase_stage": {
+    "kind": "single",
+    "labels": ["购买决策", "收货验机", "使用阶段", "售后处理", "无法判断"]
+  }
+}

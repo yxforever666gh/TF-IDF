@@ -1,0 +1,21 @@
+{
+  "complaint": {
+    "tasks": ["product_topics", "service_topics", "severity", "resolution", "user_request"],
+    "quality_gates": {
+      "product_topics": 0.65,
+      "service_topics": 0.60,
+      "severity": 0.60,
+      "resolution": 0.60,
+      "user_request": 0.55
+    }
+  },
+  "ecommerce": {
+    "tasks": ["sentiment", "product_topics", "service_topics"],
+    "quality_gates": {
+      "sentiment": 0.70,
+      "product_topics": 0.65,
+      "service_topics": 0.60
+    },
+    "sentiment_minimum_test_support_per_class": 20
+  }
+}

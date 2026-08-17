@@ -1,0 +1,24 @@
+{
+  "release": "v0.1.0",
+  "split": "deterministic_group_70_15_15_seed_42",
+  "complaint": {
+    "annotations": 1502,
+    "scope": {"in_scope": 5376, "out_of_scope": 427, "review": 588},
+    "tasks": {
+      "product_topics": {"macro_f1": 0.4525, "status": "baseline_only"},
+      "service_topics": {"macro_f1": 0.4592, "status": "baseline_only"},
+      "severity": {"macro_f1": 0.3946, "status": "baseline_only"},
+      "resolution": {"macro_f1": 0.5099, "status": "baseline_only"},
+      "user_request": {"macro_f1": 0.4532, "status": "baseline_only"}
+    }
+  },
+  "ecommerce": {
+    "annotations": 1271,
+    "taobao_status": "domain_transfer",
+    "tasks": {
+      "sentiment": {"macro_f1": 0.3144, "status": "baseline_only", "support_gate_passed": false},
+      "product_topics": {"macro_f1": 0.6990, "status": "approved"},
+      "service_topics": {"macro_f1": 0.3382, "status": "baseline_only"}
+    }
+  }
+}

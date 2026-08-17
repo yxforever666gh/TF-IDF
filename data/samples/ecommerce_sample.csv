@@ -1,0 +1,3 @@
+record_id,platform,record_type,clean_text,original_rating,spec
+sample-ecommerce-1,京东,主评论,续航不错，屏幕显示清晰,5,iPhone 16 256GB
+sample-ecommerce-2,淘宝,主评论,物流很快，但机身容易发热,,iPhone 16 Pro
